@@ -1,0 +1,18 @@
+{
+  "schemaVersion": 1,
+  "id": "shared-villager-cure",
+  "version": "${version}",
+  "name": "Shared Villager Cure",
+  "description": "Server-side: the trading discount earned by curing a zombie villager is shared with every player. When anyone cures a villager, all players get that villager's discounted prices.",
+  "authors": ["B0bTheSkull"],
+  "license": "GPL-3.0-only",
+  "environment": "*",
+  "entrypoints": {
+    "main": ["com.b0btheskull.sharedcure.SharedCure"]
+  },
+  "mixins": ["shared-villager-cure.mixins.json"],
+  "depends": {
+    "fabricloader": ">=0.19.0",
+    "minecraft": ">=26.2-"
+  }
+}
